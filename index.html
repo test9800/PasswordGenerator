@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="default.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body id="bodyHtml">
+    <video autoplay muted loop id="city_video">
+      <source src="city_day_night480.mp4" />
+    </video>
+    <h3 id="passwordOutput"></h3>
+
+    <div id="mainContainer">
+      <form id="PasswordGeneratorForm">
+        <div id="everythingBesidesStart">
+          <div id="formLeftColumn">
+            <label class="form_label" for="characterAmountNumber">
+              Number of Characters
+            </label>
+            <label class="form_label" for="includeUppercase">
+              Include Uppercase
+            </label>
+            <label class="form_label" for="includeNumbers"
+              >Include Numbers</label
+            >
+            <label class="form_label" for="includeSymbols"
+              >Include Symbols</label
+            >
+          </div>
+
+          <div id="formRightColumn">
+            <div id="amountCharacters">
+              <input
+                type="number"
+                min="10"
+                max="100"
+                value="20"
+                id="characterAmountNumber"
+              />
+            </div>
+            <div id="formRightColumnDots">
+              <input type="checkbox" id="includeUppercase" />
+              <input type="checkbox" id="includeNumbers" />
+              <input type="checkbox" id="includeSymbols" />
+            </div>
+          </div>
+        </div>
+        <br /><br /><br />
+        <div id="startButtonBox">
+          <button id="startButton" type="submit">GENERATE</button>
+        </div>
+      </form>
+
+      <div id="copyButtonBox">
+        <button id="copyButton">COPY</button>
+      </div>
+    </div>
+  </body>
+</html>
